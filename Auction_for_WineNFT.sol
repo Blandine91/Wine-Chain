@@ -1,11 +1,11 @@
-Auction
+//Auction
 Seller of WineNFT deploys this contract.
 Auction lasts for 7 days.
 Participants can bid by depositing ETH greater than the current highest bidder.
 All bidders can withdraw their bid if it is not the current highest bid.
 After the auction
 Highest bidder becomes the new owner of the WineNFT.
-The seller receives the highest bid of ETH.
+The seller receives the highest bid of ETH.*/
 
 
 // SPDX-License-Identifier: MIT
