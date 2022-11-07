@@ -1,4 +1,4 @@
-//Auction
+/** English Auction :
 Seller of WineNFT deploys this contract.
 Auction lasts for 7 days.
 Participants can bid by depositing ETH greater than the current highest bidder.
