@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from typing import Any, List
 
 
-load_dotenv()
+load_dotenv("s.env")
 
 # Define and connect a new Web3 provider
 w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
@@ -28,7 +28,7 @@ w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
 def load_contract():
 
     # Load the contract ABI
-    with open(Path("C:/Users/lesli/Jupyter-Workspace/Project3/contrat_compiled.json")) as f:
+    with open(Path("compiled_contract.json")) as f:
         auction_abi = json.load(f)
 
     # Set the contract address (this is the address of the deployed contract)
@@ -133,8 +133,8 @@ address = st.sidebar.selectbox("Select Account", options=accounts)
 # Write the client's Ethereum account address to the sidebar
 st.sidebar.write()
 
-# Create a select box to chose a car to bid on
-wine = st.sidebar.selectbox('Select Wine NFT', wine)
+# Create a select box to chose a wine to bid on
+wine = st.sidebar.selectbox('Select Wine NFT', wines)
 
 # Create a input field to record the initial bid
 starting_bid = st.sidebar.number_input("Bid")
@@ -161,19 +161,19 @@ wine_address = wine_database[wine][1]
 st.sidebar.write(wine_address)
 
 if st.sidebar.button("Place Bid"):
-    tx_hash = contract.functions.bid().transact({'from': account, 'gas': 3000000})
+    tx_hash = contract.fonction.bid().transact({'from': account, 'gas': 3000000})
     receipt = w3.eth.waitForTransactionReceipt(tx_hash)
     st.write("Transaction receipt mined:")
     st.write(dict(receipt))
  
 if st.sidebar.button("Withdraw"):
-    tx_hash = contract.functions.withdraw()
+    tx_hash = contract.function.withdraw()
     receipt = w3.eth.waitForTransactionReceipt(tx_hash)
     st.write("Transaction receipt mined:")
     st.write(dict(receipt))
 
 if st.sidebar.button("End Auction"):
-    tx_hash = contract.functions.auctionend()
+    tx_hash = contract.function.auctionend()
     receipt = w3.eth.waitForTransactionReceipt(tx_hash)
     st.write("Transaction receipt mined:")
     st.write(dict(receipt))
