@@ -23,29 +23,22 @@
 * Remix.Ethereum - create and deploy a contract and test transactions 
 * GitHub - store and transfer project files
 * Metamask - connect ganache to remix and facilitate the test transactions
-# Flask MetaMask
-Shopping cart for simulating wine shopping with metamask accounts.
-## Preparations
-Install Flask
-Run Ganache
-Connect Metamask to Ganache Network
-flask run
-
-
-
-
-
-
-
-
-### Libraries: 
+## Libraries: 
 * Wallet_connect - To connect our store to a verified crypto wallet 
 * Flask - Build and share store front web application
-### Languages: 
-       * Javascript
-       *  Html
+## Languages: 
+* Javascript
+* Html
 ---
----       
+---
+## Execution Instructions
+For Flask web-store:
+-Make sure Flask library is installed
+-Run Ganache
+-Connect Metamask to Ganache Network
+-Navigate to Flask_web_store directory and flask run
+
+
 ## Conclusion
 Our Goal was to create web3 based wine store that ran on the Ethereum network that accepted Ethereum Coins as payment
 By utilizing
