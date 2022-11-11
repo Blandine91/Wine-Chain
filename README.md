@@ -32,11 +32,11 @@
 ---
 ---
 ## Execution Instructions
-For Flask web-store:
--Make sure Flask library is installed
--Run Ganache
--Connect Metamask to Ganache Network
--Navigate to Flask_web_store directory and flask run
+For Flask web-store:<br>
+-Make sure Flask library is installed<br>
+-Run Ganache<br>
+-Connect Metamask to Ganache Network<br>
+-Navigate to Flask_web_store directory and flask run<br>
 
 
 ## Conclusion
