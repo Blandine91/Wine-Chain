@@ -23,6 +23,21 @@
 * Remix.Ethereum - create and deploy a contract and test transactions 
 * GitHub - store and transfer project files
 * Metamask - connect ganache to remix and facilitate the test transactions
+# Flask MetaMask
+Shopping cart for simulating wine shopping with metamask accounts.
+## Preparations
+Install Flask
+Run Ganache
+Connect Metamask to Ganache Network
+flask run
+
+
+
+
+
+
+
+
 ### Libraries: 
 * Wallet_connect - To connect our store to a verified crypto wallet 
 * Flask - Build and share store front web application
